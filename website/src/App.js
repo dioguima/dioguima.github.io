@@ -38,7 +38,7 @@ function App() {
         </div>
         <ul className='no-style-horizontal'>
           <li>
-            <img className='profile' src='./profile.png' />
+            {/* <img className='profile' src='./profile.png' /> */}
           </li>
           <li>
             <p className='title'>
