@@ -74,6 +74,21 @@ p.title {
   width: 32px;
 }
 
+div.App{
+  height: 100%;
+}
+
+
+
+div.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: purple;
+  height: 100%;
+}
+
 div.social-media {
   margin-right: 20px;
   height: 40px;
@@ -84,8 +99,32 @@ div.social-media {
   flex-direction: column;
 }
 
-div.social-media > ul {
-  margin: 10px 20px;
+div.presentation {
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+div.presentation h2{
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  text-align: left;
+  font-size: 40px;
+}
+
+div.presentation p{
+  font-size: 18px;
+}
+
+ul.social-media {
+  padding-left: 0;
+}
+
+ul.social-media li {
+  margin-right: 20px;
 }
 
 ul.top-menu {
@@ -116,3 +155,8 @@ ul.top-menu a:hover {
 ul.top-menu > li {
   margin: 0 10px;
 }
+
+p {
+  text-align: left;
+}
+

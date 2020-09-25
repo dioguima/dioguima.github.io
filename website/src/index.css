@@ -12,4 +12,11 @@ code {
     monospace;
 }
 
+html, body, #app, #app>div {
+  height: 100%
+}
 
+body, div.root {
+  display: flex;
+  flex-direction: column;
+}
