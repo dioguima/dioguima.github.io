@@ -26,4 +26,5 @@ jobs:
       - name: Checkout and build
         run: |
           git checkout --orphan gh-pages
+          cd ./website
           npm run build
