@@ -25,6 +25,8 @@ jobs:
       - name: Npm install
         run: |
           cd ./website
+          npm cache clean --force
+          rm -rf node_modules package-lock.json
           npm install
 
       # Runs a single command using the runners shell
