@@ -21,16 +21,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      - name: Npm install
+             
+      - name: Deploy
         run: |
           cd ./website
-          npm cache clean --force
-          rm -rf node_modules package-lock.json
-          npm install
-
-      # Runs a single command using the runners shell
-      - name: Checkout and build
-        run: |
-          cd ./website
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
           npm run deploy
+        env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}
