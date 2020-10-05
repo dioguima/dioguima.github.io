@@ -25,6 +25,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Checkout and build
         run: |
-          git checkout --orphan gh-pages
           cd ./website
-          npm run build
+          npm run deploy
