@@ -34,5 +34,7 @@ jobs:
           cd ./website
           npm install
       - name: Build page
-        run: npm run build
+        run: |
+          cd ./website
+          npm run build
         
