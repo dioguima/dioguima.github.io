@@ -29,4 +29,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Checkout and build
-        run: npm run deploy
+        run: |
+          cd ./website
+          npm run deploy
