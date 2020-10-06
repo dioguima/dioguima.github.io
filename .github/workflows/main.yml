@@ -29,12 +29,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Packages and build
-        run: |
-          cd ./website
-          npm cache clean --force
-          rm -rf node_modules package-lock.json
-          npm install
-          npm run build
+      - run: cd ./website
+      - run: npm install
+      - run: npm run build --if-present
 
         
