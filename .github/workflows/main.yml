@@ -6,8 +6,6 @@ name: Deploy
 # events but only for the master branch
 on:
   push:
-    branches: [ master, feature/ci-and-cd ]
-  pull_request:
     branches: [ master ]
 env:
   CI : false
