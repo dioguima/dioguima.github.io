@@ -1,3 +1,3 @@
 # dioguima.github.io
 
-![CI/CD](https://github.com/dioguima/dioguima.github.io/workflows/main/badge.svg)
+[![Actions Status](https://github.com/dioguima/dioguima.github.io/workflows/Deploy/badge.svg)](https://github.com/dioguima/dioguima.github.io/actions)
