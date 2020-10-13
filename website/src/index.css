@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(116.82deg, #D8D7D7 8.33%, #A4A4A4 84.37%);
 }
 
 code {
@@ -12,11 +13,9 @@ code {
     monospace;
 }
 
-html, body, #app, #app>div {
-  height: 100%
-}
+body{ height:100vh; }
 
-body, div.root {
+/* body, div.root {
   display: flex;
   flex-direction: column;
-}
+} */
