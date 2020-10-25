@@ -1,0 +1,15 @@
+div.languageSelector{
+    display: flex;
+    flex-direction: row;
+}
+
+div.separator{
+    background-color: #404040;
+    width: 3px;
+    height: 22px;
+    margin: 0 10px;
+}
+
+div.languageSelector > span{
+    cursor: pointer;
+}

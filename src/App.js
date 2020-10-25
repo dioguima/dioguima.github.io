@@ -1,11 +1,11 @@
 import React from 'react';
-import profileImagePath from './images/profile.png'
-import linkedinImagePath from './images/icons/linkedin.png'
-import emailImagePath from './images/icons/email.png'
-import gitHubImagePath from './images/icons/github.png'
 import './App.css';
-import SocialCombo from './components/molecules/social-combo';
 import PersonalSummary from './components/organisms/personal-summary';
+import MenuBar from './components/organisms/menu-bar'
+
+import counterpart from 'counterpart';
+import Translate from 'react-translate-component';
+import en from './locales/en';
 
 function App() {
   return (
@@ -26,6 +26,9 @@ function App() {
 
         </div>
       </header> */}
+      <header>
+        <MenuBar />
+      </header>
       <div className="body">
         <PersonalSummary />
       </div>

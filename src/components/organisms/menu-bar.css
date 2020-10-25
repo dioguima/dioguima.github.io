@@ -1,0 +1,6 @@
+div.menuBar{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+}
