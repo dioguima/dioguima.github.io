@@ -30,9 +30,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install
-        run: |
-          cd ./website
-          npm install
+        run: npm install
       - name: git config
         run: |
           git config --global user.name $user_name
@@ -44,6 +42,4 @@ jobs:
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
       - name: deploy
-        run: |
-          cd ./website
-          npm run deploy
+        run: npm run deploy
