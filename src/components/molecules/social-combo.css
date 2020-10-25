@@ -1,13 +1,16 @@
-ul.no-style,
-ul.no-style-horizontal {
-  list-style-type: none;
-}
-
-ul.no-style-horizontal > li {
-  float: left;
-  text-align: left;
-}
-
 img{
-    width: 40px;
+    width: 48px;
+}
+
+div.container > a{
+  padding-right: 28px;
+}
+
+@media screen and (max-width: 480px) {
+
+  div.container{
+    display: flex;
+    justify-content: center;
+  }
+
 }

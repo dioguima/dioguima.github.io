@@ -10,7 +10,7 @@ import PersonalSummary from './components/organisms/personal-summary';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <div className='full-width social-media'>
           <ul className='no-style-horizontal top-menu'>
             <li>
@@ -25,7 +25,7 @@ function App() {
           </ul>
 
         </div>
-      </header>
+      </header> */}
       <div className="body">
         <PersonalSummary />
       </div>
