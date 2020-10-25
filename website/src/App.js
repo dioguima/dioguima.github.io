@@ -4,6 +4,8 @@ import linkedinImagePath from './images/icons/linkedin.png'
 import emailImagePath from './images/icons/email.png'
 import gitHubImagePath from './images/icons/github.png'
 import './App.css';
+import SocialCombo from './components/molecules/social-combo';
+import PersonalSummary from './components/organisms/personal-summary';
 
 function App() {
   return (
@@ -25,29 +27,7 @@ function App() {
         </div>
       </header>
       <div className="body">
-        <div className='presentation'>
-          <h2>Diogo</h2>
-          <p>
-            Desenvolvedor full stack por profissão e desenvolvedor de jogos como hobby.
-        </p>
-          <ul className='no-style-horizontal social-media'>
-            <li>
-              <a href='mailto:diogoferreiraguima@hotmail.com'>
-                <img className='icon' src={emailImagePath} />
-              </a>
-            </li>
-            <li>
-              <a href='https://www.linkedin.com/in/diogoafg/' target='new'>
-                <img className='icon' src={linkedinImagePath} />
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/dioguima' target='new'>
-                <img className='icon' src={gitHubImagePath} />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <PersonalSummary />
       </div>
 
     </div>

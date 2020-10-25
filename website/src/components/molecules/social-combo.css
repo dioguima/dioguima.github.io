@@ -1,0 +1,13 @@
+ul.no-style,
+ul.no-style-horizontal {
+  list-style-type: none;
+}
+
+ul.no-style-horizontal > li {
+  float: left;
+  text-align: left;
+}
+
+img{
+    width: 40px;
+}
