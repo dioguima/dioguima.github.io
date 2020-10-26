@@ -13,14 +13,11 @@ code {
     monospace;
 }
 
-body{ height:100vh; }
-
-/* body, div.root {
-  display: flex;
-  flex-direction: column;
-} */
-
 html, body, #root, .App {
   height: 100%;
   color: #404040;
+}
+
+div.body{
+  height: calc(100vh - 52px) !important;
 }
